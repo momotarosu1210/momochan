@@ -53,8 +53,6 @@ img{
 /*ヘッダー*/
 .logo{
   z-index: 3;
-  width:auto;
-  height:auto;
 }
 /*ヘッダーハンバーガーメニュー*/
 nav.NavMenu{
@@ -87,7 +85,7 @@ nav.NavMenu ul li{
     display: block;
     position: absolute;    /* bodyに対しての絶対位置指定 */
     right: 10px;
-    top: 20px;
+    top: 11px;
     width: 42px;
     height: 42px;
     cursor: pointer;
