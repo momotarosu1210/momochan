@@ -222,18 +222,19 @@ nav.NavMenu.active{
     max-height:100%;
   }
 
-  /*ヒーロー部分*/
+  /*ヒーロー*/
   .hero{
     color:white;
     padding:180px 25%!important ;
   }
 
-  /*アバウト部分*/
+  /*アバウト*/
   .about-img{
     width:25%;
     height:25%;
   }
 
+  /*サンプル（ワークスの方にもつけると思う）*/
   .scale {
     transition-duration: 0.3s; /*変化の時間*/
   }
