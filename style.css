@@ -233,4 +233,12 @@ nav.NavMenu.active{
     width:25%;
     height:25%;
   }
+
+  .scale {
+    transition-duration: 0.3s; /*変化の時間*/
+  }
+  .scale:hover {
+    transform: scale(1.1,1.1); /*画像の拡大*/
+    cursor: pointer; /*カーソルをポインターにする*/
+  }
 }
