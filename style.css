@@ -164,8 +164,6 @@ nav.NavMenu.active{
 }
 
 
-
-
 /*トップに戻るボタン*/
 #pagetop{
   position: fixed;
@@ -217,7 +215,7 @@ nav.NavMenu.active{
   }
 
   img{
-    width:auto;
+    width:100%;
     height:auto;
     max-width:100%;
     max-height:100%;
@@ -236,6 +234,11 @@ nav.NavMenu.active{
   }
 
   /*サンプル（ワークスの方にもつけると思う）*/
+  .sample-img{
+    max-width:250px;
+    min-width:250px;
+  }
+
   .scale {
     transition-duration: 0.3s; /*変化の時間*/
   }
@@ -253,8 +256,8 @@ nav.NavMenu.active{
   img{
     width:auto;
     height:auto;
-    max-width:100%;
-    max-height:100%;
+    max-width:25%;
+    max-height:25%;
   }
 
   /*ヒーロー*/
