@@ -12,7 +12,6 @@ body.fixed{
     padding-left: 0px;
     padding-right: 0px;
     color:#707070;
-
   }
 
 
@@ -37,7 +36,6 @@ img{
   max-height:50%;
 }
 
-
 /*テキスト共通*/
 .txtl{
   font-size: 45px;
@@ -56,7 +54,6 @@ img{
   font-size: 15px;
   font-weight: 100;
 }
-
 
 /*ヘッダー*/
 .logo{
@@ -145,7 +142,6 @@ nav.NavMenu.active{
 
 
 /*ヒーロー*/
-
 .bg-img{
   background-image: url(img/background.png);
   background-size: 100%;
@@ -163,7 +159,6 @@ nav.NavMenu.active{
   padding:90px 0px;
   border:solid 5px;
 }
-
 
 /*トップに戻るボタン*/
 #pagetop{
@@ -236,14 +231,16 @@ nav.NavMenu.active{
 
   /*サンプル（ワークスの方にもつけると思う）*/
   .sample-img{
-    max-width:240px;
-    min-width:240px;
+    max-width:25%;
+    min-width:25%;
   }
 
   .scale {
     transition-duration: 0.3s; /*変化の時間*/
   }
+
   .scale:hover {
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.3);
     transform: scale(1.1,1.1); /*画像の拡大*/
     cursor: pointer; /*カーソルをポインターにする*/
   }
