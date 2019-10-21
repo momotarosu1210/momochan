@@ -62,6 +62,7 @@ img{
 .logo{
   z-index: 3;
 }
+
 /*ヘッダーハンバーガーメニュー*/
 nav.NavMenu{
   position:fixed;
@@ -159,7 +160,7 @@ nav.NavMenu.active{
 }
 
 .hero-content{
-  padding:80px 0px;
+  padding:90px 0px;
   border:solid 5px;
 }
 
@@ -235,8 +236,8 @@ nav.NavMenu.active{
 
   /*サンプル（ワークスの方にもつけると思う）*/
   .sample-img{
-    max-width:250px;
-    min-width:250px;
+    max-width:240px;
+    min-width:240px;
   }
 
   .scale {
