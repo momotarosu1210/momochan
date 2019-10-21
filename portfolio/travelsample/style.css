@@ -1,0 +1,291 @@
+/*共通*/
+
+body{
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック",sans-serif;
+}
+.container{
+  padding:20px 20px;
+}
+
+.content{
+  padding:10px  0px;
+}
+
+.section{
+  padding:10px 10px;
+}
+
+body a{
+ display: block; /*クリックできる領域を広げる*/
+ color: #000;
+ padding: 1em 0;
+ text-decoration: none;
+}
+
+body.fixed{
+  position: fixed;
+}
+
+
+img{
+  width:auto;
+  height:auto;
+  max-width:100%;
+  max-height:auto;
+}
+
+footer{
+  background-color: #222222;
+  color: #CCCCCC;
+}
+
+
+.txtxl{
+}
+
+.txtl{
+}
+
+.txtm{
+  font-size: 30px;
+}
+
+.txts{
+  font-size:15px;
+}
+
+.txtxs{
+  font-size: 10px;
+}
+
+.is-mobile-none{
+  display: none;
+}
+
+
+/*ヘッダー*/
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width:10%;
+  height:auto;
+}
+
+
+/*バーガーメニュー*/
+/*バーガーメニューの後ろを暗くする*/
+.bg-black{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100vw;
+  height:100vh;
+  z-index: 2;
+  background-color: #000000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.6s;
+}
+
+.bg-black.active{
+  visibility:visible;
+  opacity: 0.8;
+}
+
+/*バーガーの中身*/
+nav.NavMenu{
+  position:fixed;
+  z-index:3;
+  top:0;
+  right:0;
+  text-align:center;
+  background-color: #ffffff;
+  width:50%;
+  height:100vh;
+  transform: translateY(-100%);
+  transition: all 0.6s;
+}
+
+.NavContent{
+  padding:70px 10px;
+}
+
+nav.NavMenu.active{
+  transform: translateY(0%);
+}
+
+  nav.NavMenu ul li{
+    border:1px solid;
+    margin:20px 0;
+  }
+
+
+/*トグルボタン*/
+.Toggle {
+    display: block;
+    position: absolute;    /* bodyに対しての絶対位置指定 */
+    right: 10px;
+    top: 11px;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    z-index: 4;
+    border:solid 1px;
+}
+
+  .Toggle span {
+      display: block;
+      position: absolute;
+      width: 30px;
+      border-bottom: solid 3px #000;
+      -webkit-transition: .35s ease-in-out;	/*変化の速度を指定*/
+      -moz-transition: .35s ease-in-out;		/*変化の速度を指定*/
+      transition: .35s ease-in-out;			/*変化の速度を指定*/
+      left: 6px;
+  }
+
+    .Toggle span:nth-child(1) {
+        top: 9px;
+    }
+
+    .Toggle span:nth-child(2) {
+        top: 18px;
+    }
+
+    .Toggle span:nth-child(3) {
+        top: 27px;
+    }
+
+    /* 最初のspanをマイナス45度に */
+    .Toggle.active span:nth-child(1) {
+        top: 18px;
+        left: 6px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    /* 2番目と3番目のspanを45度に */
+    .Toggle.active span:nth-child(2),
+    .Toggle.active span:nth-child(3) {
+        top: 18px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+/*ヒーロー*/
+.hero-bg-img{
+  background-image: url(img/background.jpg);
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;/*場合によってはno-repeat*/
+  background-position: center;
+}
+
+.hero{
+  background-color: rgba(255,255,255,0.3);
+  margin:100px 0px;
+  display: inline-block;
+  padding:100px 0px;
+}
+
+/*アバウト*/
+
+.about{
+  min-height: 200px;
+  text-align: center;
+  align-items: center;
+  background-color: rgba(240,240,240,0.4);
+}
+
+.value{
+  text-align: center;
+}
+
+/*フッター*/
+.footer-width{
+  width:50%;
+}
+
+.footer-display{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+/*copyright*/
+.copyright{
+  font-size: 10px;
+  color:#AAAAAA;
+  text-align: center;
+}
+
+
+@media (min-width: 769px) {/*パソコン*/
+  /*共通*/
+
+  img{
+    width:auto;
+    height:auto;
+    max-width:70%;
+    max-height:auto;
+  }
+
+  .is-desktop-none{
+    display: none;
+  }
+
+  .is-mobile-none{
+    display: block;
+  }
+
+  /*ヘッダー*/
+  .logo {
+    width:13%;
+    height:auto;
+  }
+    /*メニュー*/
+    .menu{
+      display: flex;
+      align-items:center;
+    }
+
+  /*ヒーロー*/
+  .hero{
+    background-color: rgba(255,255,255,0.3);
+    margin:100px 0px;
+    display: inline-block;
+    padding:150px 100px 150px 100px;
+  }
+
+  /*バリュー*/
+
+  .value-content{
+    display: flex;
+    align-items: center;
+  }
+
+    .value-content:nth-child(even){
+      flex-direction: row-reverse;
+    }
+
+  /*フッター*/
+
+  .footer-width{
+    width:100%;
+  }
+  .footer-display{
+    flex-wrap:nowrap;
+  }
+  footer .content{
+    padding:30px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {/*タブレット*/
+
+ }
