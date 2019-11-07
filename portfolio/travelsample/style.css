@@ -40,12 +40,6 @@ footer{
 }
 
 
-.txtxl{
-}
-
-.txtl{
-}
-
 .txtm{
   font-size: 30px;
 }
@@ -288,4 +282,10 @@ nav.NavMenu.active{
 
 @media (max-width: 1024px) and (min-width: 768px) {/*タブレット*/
 
+ }
+
+ @media (orientation:landscape){
+   .NavMenu.txts{
+     font-size:10px;
+   }
  }
