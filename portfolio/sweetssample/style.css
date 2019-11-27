@@ -1,0 +1,228 @@
+.container{
+  padding:20px 20px;
+}
+
+.content{
+  padding:10px  0px;
+}
+
+.section{
+  padding:10px 10px;
+}
+
+body {
+  color:#333333;
+  font-family: monospace;
+}
+
+body a{
+ display: block; /*クリックできる領域を広げる*/
+ color: #000;
+ padding: 1em 0;
+ text-decoration: none;
+}
+
+body.fixed{
+  position: fixed;
+}
+
+
+img{
+  width:auto;
+  height:auto;
+  max-width:100%;
+  max-height:auto;
+}
+
+footer{
+  background-color: #222222;
+  color: #CCCCCC;
+}
+
+
+.txtm{
+  font-size: 30px;
+}
+
+.txts{
+  font-size:15px;
+}
+
+.txtxs{
+  font-size: 10px;
+}
+
+.txt-center{
+  text-align: center;
+}
+
+.is-mobile-none{
+  display: none;
+}
+
+
+/*ヘッダー*/
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width:25%;
+  height:auto;
+  margin:-10px;
+}
+
+
+/*バーガーメニュー*/
+/*バーガーメニューの後ろを暗くする*/
+.bg-black{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100vw;
+  height:100vh;
+  z-index: 2;
+  background-color: #000000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.6s;
+}
+
+.bg-black.active{
+  visibility:visible;
+  opacity: 0.8;
+}
+
+/*バーガーの中身*/
+nav.NavMenu{
+  position:fixed;
+  z-index:3;
+  top:0;
+  right:0;
+  text-align:center;
+  background-color: #ffffff;
+  width:50%;
+  height:100vh;
+  transform: translateY(-100%);
+  transition: all 0.6s;
+}
+
+.NavContent{
+  padding:70px 10px;
+}
+
+nav.NavMenu.active{
+  transform: translateY(0%);
+}
+
+  nav.NavMenu ul li{
+    border:1px solid;
+    margin:20px 0;
+  }
+
+
+/*トグルボタン*/
+.Toggle {
+    display: block;
+    position: absolute;    /* bodyに対しての絶対位置指定 */
+    right: 10px;
+    top: 11px;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    z-index: 4;
+    border:solid 1px;
+}
+
+  .Toggle span {
+      display: block;
+      position: absolute;
+      width: 30px;
+      border-bottom: solid 3px #000;
+      -webkit-transition: .35s ease-in-out;	/*変化の速度を指定*/
+      -moz-transition: .35s ease-in-out;		/*変化の速度を指定*/
+      transition: .35s ease-in-out;			/*変化の速度を指定*/
+      left: 6px;
+  }
+
+    .Toggle span:nth-child(1) {
+        top: 9px;
+    }
+
+    .Toggle span:nth-child(2) {
+        top: 18px;
+    }
+
+    .Toggle span:nth-child(3) {
+        top: 27px;
+    }
+
+    /* 最初のspanをマイナス45度に */
+    .Toggle.active span:nth-child(1) {
+        top: 18px;
+        left: 6px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    /* 2番目と3番目のspanを45度に */
+    .Toggle.active span:nth-child(2),
+    .Toggle.active span:nth-child(3) {
+        top: 18px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+/*ヒーロー*/
+.container.hero{
+  position: relative;
+  height:50vh;
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;/*場合によってはno-repeat*/
+  background-position: center center;
+}
+
+.hero-content{
+  padding:20px 20px;
+}
+
+.bg-white{
+  background-color: rgba(255,255,255,0.3);
+  position: absolute;
+  width: 100%;
+  height:100%;
+  top:0;
+  left:0;
+}
+/*こだわり*/
+
+
+/*オーダーメイド*/
+
+.container.ordermade{
+  text-align:left;
+  background-image: url(img/texture.jpg);
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;/*場合によってはno-repeat*/
+  background-position: center;
+}
+
+.section.ordermade{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*お問い合わせ*/
+
+.container.contact{
+  background-color:rgba(240, 240, 240, 0.5);
+}
+
+.content.contact{
+  display: flex;
+  flex-direction: column;
+}

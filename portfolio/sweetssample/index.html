@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scable=no　shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="pagetop.js" charset="utf-8"></script>
+    <script src="barger.js" charset="utf-8"></script>
+    <script src="jquery.bgswitcher.js" charset="utf-8"></script>
+    <script src="background.js" charset="utf-8"></script>
+
+    <!--<script src="background.js" charset="utf-8"></script>-->
+    <title>Momo's Cookies</title>
+  </head>
+  <body>
+    <!--ヘッダー-->
+    <header>
+      <div class="container header">
+        <!--ロゴ-->
+        <div class="logo is-desktop-none">
+          <img src="img/logomobile.PNG" alt="">
+        </div>
+        <div class="logo is-mobile-none">
+          <img src="img/logodesktop.PNG" alt="">
+        </div>
+        <!--メニュー-->
+        <!--スマホメニュー-->
+        <div class="section is-desktop-none">
+          <nav class="NavMenu txts">
+           <ul class="NavContent">
+            <li><a href="#kodawari">こだわり</a></li>
+            <li><a href="#ordermade">オーダーメイド</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+            <li><a href="#">SNS</a></li><!--普通のリンクじゃない-->
+           </ul>
+          </nav>
+          <!--バーガーボタン-->
+          <div class="Toggle">
+           <span></span>
+           <span></span>
+           <span></span>
+          </div>
+        </div>
+
+        <!--デスクトップメニュー-->
+        <div class="section is-mobile-none menu">
+          <div class="section">
+            こだわり
+          </div>
+          <div class="section">
+            オーダーメイド
+          </div>
+          <div class="section">
+            お問い合わせ
+          </div>
+          <div class="section">
+            SNS
+          </div>
+        </div>
+        <div class="bg-black">
+          <!--メニュー開いた時後ろを暗くする-->
+        </div>
+      </div>
+    </header>
+
+    <!--メイン-->
+    <div class="wrap">
+
+      <div class="container hero">
+        <div class="bg-white">
+          <div class="hero-content txts txt-brown">
+            忙しい毎日に <br>
+            ひとときの休息を
+          </div>
+        </div>
+      </div>
+
+      <!--こだわり-->
+      <a name="kodawari"></a>
+      <div class="container">
+
+        <div class="section txt-center">
+          〜こだわり〜
+        </div>
+
+        <div class="section txt-center">
+          <div class="contents">
+            <p>その１</p>
+            <div class="content">
+              <img src="img/kodawari1.jpg" alt="">
+            </div>
+            <div class="content">
+              素材にこだわっています。
+            </div>
+          </div>
+          <div class="contents">
+            <p>その２</p>
+            <div class="content">
+              <img src="img/kodawari2.jpg" alt="">
+            </div>
+            <div class="content">
+              お客様の声を元に、様々なデザインを日々試行錯誤しています。
+            </div>
+          </div>
+          <div class="contents">
+            <p>その３</p>
+            <div class="content">
+              <img src="img/kodawari3.jpg" alt="">
+            </div>
+            <div class="content">
+              毎日違うデザインのものを提供しています。
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!--オーダーメイド-->
+      <a name="ordermade"></a>
+      <div class="container ordermade">
+        <div class="section txt-center ordermade">
+          〜オーダーメイド〜
+        </div>
+        <div class="section">
+          <div class="content">
+            当店では、お客様からのオーダーメイドを承っております。 <br>
+            誕生日や、結婚式のプチギフトなどお祝い事の際にいかがでしょうか。
+          </div>
+        </div>
+        <a name="contact"></a>
+      </div>
+
+      <!--お問い合わせ-->
+
+      <div class="container contact">
+        <div class="section txt-center">
+          〜お問い合わせ〜
+        </div>
+        <div class="section contact">
+          <form action="#" method="post" class="content contact">
+            <label for="name">お名前:</label>  <input id="name"type="text" name="name">
+            <label for="name">件名:</label>  <input id="name"type="text" name="name">
+            <label for="name">お問い合わせ内容:</label>  <textarea id="name"type="comment" name="name"></textarea>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <p class="txt-center">copyright</p>
+    </footer>
+
+  </body>
+</html>
