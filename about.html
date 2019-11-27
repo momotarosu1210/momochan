@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scable=no">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="pagetop.js" charset="utf-8"></script>
+    <script src="barger.js" charset="utf-8"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1550e8e834.js" crossorigin="anonymous"></script>
+    <title>Momo's Portfolio</title>
+  </head>
+  <body>
+    <!--ページ上まで飛ぶボタン-->
+    <div id="pagetop">
+      <!--アイコン-->
+      <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!--ヘッダー-->
+    <header>
+      <div class="container-fluid d-flex justify-content-between p-3 align-items-center">
+        <!--ヘッダー左-->
+        <div class="section content logo">
+          <img src="img/logo.PNG" alt="">
+        </div>
+
+        <!--ヘッダー右-->
+        <!--スマホ用-->
+        <div class="section content d-md-none mobile d-flex">
+          <!--バーガーメニュー-->
+          <nav class="NavMenu p-5 txts">
+           <ul class="NavContent">
+            <li><a href="#about">-ABOUT-</a></li>
+            <li><a href="#works">-WORKS-</a></li>
+            <li><a href="#sample">-SAMPLE-</a></li>
+            <li><a href="#contact">-CONTACT-</a></li>
+           </ul>
+          </nav>
+          <!--バーガーボタン-->
+          <div class="Toggle">
+           <span></span>
+           <span></span>
+           <span></span>
+          </div>
+        </div>
+
+        <!--デスクトップ用-->
+        <div class="section content d-none d-md-flex">
+          <div class="pb-2">
+            <a href="#about" class="animelink">ABOUT</a>
+          </div>
+          <div class="px-2">
+            <a href="#works" class="animelink">WORKS</a>
+          </div>
+          <div class="px-2">
+            <a href="#sample" class="animelink">SAMPLE</a>
+          </div>
+          <div class="px-2">
+            <a href="#contact" class="animelink">CONTACT</a>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <!--コンテンツ-->
+    <div class="container-fluid">
+
+      <!--ABOUT-->
+      <div class="content">
+        <!--タイトル-->
+        <div class="txts text-center">
+          -ABOUT-
+        </div>
+        <!--コンテンツボディ-->
+        <div class="section py-md-5 p-3">
+          <img  class="about-img pt-3 border" src="img/profile3.PNG" alt="">
+          <div class="text-left pt-4 txtxs">
+            <p>大学時代からゼミでWebサイト、Webアプリの開発をしていました。<br>
+               現在は、SEとして働きつつWebデザインなどの勉強をしています。
+            </p>
+            <p>名前：もも</p>
+            <p>所在地：東京</p>
+            <p>開発技術(期間)：<br>
+              HTML(3年)　CSS3(2年)　SCSS(1ヶ月)　Bootstrap(1ヶ月)　JavaScript(2年)　Jquery(1年半)　WordPress(1ヶ月)</p>
+          </div>
+        </div>
+      </div>
+
+      <!--footer-->
+      <footer>
+        <p class="txtxs text-muted text-center py-3">&copy;2019 Momo's Portfolio</p>
+      </footer>
+
+    </div>
+  </body>
+</html>
